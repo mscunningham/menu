@@ -1,21 +1,70 @@
-@import url(http://fonts.googleapis.com/css?family=Leckerli+One|Vast+Shadow|Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One|Vast+Shadow|Arvo|Oxygen|Miltonian|Source+Sans+Pro|Miltonian+Tattoo);
 
 
 body {
-  padding-top: 20px;
-  font-family: 'Oxygen', cursive;
+  background-image: url("/Users/michellecunningham/Desktop/webDev/menu/images/paper.jpg");
+
 }
 
-p {
+.container {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.row {
+  padding: 3%
+}
+
+.front {
+  padding: 3%;
+}
+
+.container h1 {
+  font-family: "Miltonian";
+  font-size: 90px;
+}
+.container h2 {
+  font-size: 30pt;
+  font-family: "Miltonian",cursive;
+}
+
+.container h3{
+  font-family: "Miltonian Tattoo", sans-serif;
+  font-size: 16pt;
+}
+
+.container p{
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 12pt;
 }
 
+.container h4{
+  font-family: "Arvo", sans-serif;
+  font-size: 13pt;
+  line-height: 20px;
+}
+
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
+
   border-top: 1px solid #eee;
   text-align: center;
+}
+
+ .footer a{
+  color: #669999;
+}
+ .footer a:hover{
+  color: #99CCCC;
+  text-decoration: none;
+}
+
+
+ a{
+  color: #669999;
+}
+ a:hover{
+  color: #99CCCC;
+  text-decoration: none;
 }
 
 .address{
@@ -24,17 +73,6 @@ p {
   color: white;
 }
 
-.table {
-  text-align: left;
-  font-size: 12pt;
-  margin: auto;
-  }
-.td{
-  width: 200px;
-}
-.menu{
-  width: 100%;
-}
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -45,10 +83,6 @@ p {
   min-height: 425px;
 
 }
-/*.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}*/
 
 .round{
   margin-top: 30px;
@@ -61,11 +95,22 @@ p {
   opacity: .9;
 }
 
-/*.bannerType{
+.bannerType{
   font-size: 10px;
   padding: 10px;
-  font-family: 'Vast Shadow', cursive;
-}*/
+  font-family: 'Arvo', cursive;
+}
+
+.social{
+  color: #669999;
+  display: inline-block;
+}
+
+.social:hover{
+    color: #99CCCC;
+
+}
+
 
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -79,18 +124,18 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
-  font-weight: bold;
-  color: #777;
+  font-family: "Arvo";
+  color: white; /* nav bar text color */
   text-align: center;
-  background-color: #e5e5e5; /* Old browsers */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f5f5f5), to(#e5e5e5));
-  background-image:         linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  background-color: #99CCCC; /* Old browsers */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#669999), to(#99CCCC));
+  background-image: -webkit-linear-gradient(top, #669999 0%, #99CCCC 100%);
+  background-image:      -o-linear-gradient(top, #669999 0%, #99CCCC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #669999), to(#99CCCC));
+  background-image:         linear-gradient(top, #669999 0%, #99CCCC 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#669999', endColorstr='#99CCCC',GradientType=0 ); /* IE6-9 */
   background-repeat: repeat-x; /* Repeat the gradient */
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #669999;
 }
 .nav-justified > .active > a,
 .nav-justified > .active > a:hover,
@@ -100,6 +145,13 @@ p {
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
           box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
 }
+
+.nav-justified>li>a:hover{
+  color: #99CCCC
+
+
+}
+
 .nav-justified > li:first-child > a {
   border-radius: 5px 5px 0 0;
 }
